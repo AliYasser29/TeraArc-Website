@@ -1,5 +1,5 @@
 // API endpoint
-const API_URL = 'http://127.0.0.1:5000/api';
+const API_URL = 'link/api';
 
 // Function to fetch projects from the API
 async function fetchProjects() {
