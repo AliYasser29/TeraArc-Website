@@ -3,7 +3,7 @@ import requests
 from tkinter import messagebox
 import json
 
-API_URL = "http://127.0.0.1:5000/api"
+API_URL = "link/api"
 
 def get_headers():
     return {
