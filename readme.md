@@ -81,8 +81,8 @@ Project root/
 ## 🚀 Getting Started
 
 1. Clone the Repository
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/AliYasser29/TeraArc-Website.git
+cd TeraArc-Website
 
 2. Install Dependencies
 pip install -r requirements.txt
