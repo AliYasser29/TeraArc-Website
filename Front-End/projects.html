@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - TeraArc Software Company</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/theme.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/projects.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                TeraArc
+            </a>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+    <main class="projects-page">
+        <div class="code-decoration">
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+            <div class="code-line"></div>
+        </div>
+        <h1>Our Projects</h1>
+        <div class="projects-grid">
+            <!-- Projects will be dynamically loaded here -->
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading projects...</p>
+            </div>
+        </div>
+
+        <!-- Project Details Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeProjectModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <div class="project-description" id="modalDescription"></div>
+                    <div class="project-media">
+                        <div class="project-image">
+                            <img id="modalImage" src="" alt="Project Image">
+                        </div>
+                        <div class="project-video">
+                            <iframe id="modalVideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#" class="source-code-btn" id="sourceCodeBtn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1EKRtv39FQ/" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="tooltip">Facebook</span>
+                </a>
+                <a href="https://linkedin.com/company/teraarc" target="_blank" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="tooltip">LinkedIn</span>
+                </a>
+                <a href="https://wa.me/message/P3FWB375EUMXO1?src=qr" target="_blank" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="tooltip">WhatsApp</span>
+                </a>
+                <a href="mailto:teraarc@proton.me" class="social-icon email">
+                    <i class="far fa-envelope"></i>
+                    <span class="tooltip">Email</span>
+                </a>
+            </div>
+            <p>&copy; 2025 TeraArc Software Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
